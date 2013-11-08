@@ -12,61 +12,34 @@
  *= require_tree .
  */
 
-
- @font-face {
-     font-family: 'Mensch';
-     src: url('<%= asset_path 'mensch.eot?#iefix' %>') format('embedded-opentype'),
-          url('<%= asset_path 'mensch.woff' %>') format('woff'),
-          url('<%= asset_path 'mensch.ttf' %>') format('truetype'),
-          url('<%= asset_path 'mensch.svg#svgFontName' %>') format('svg');
-          font-weight: 400;
-          font-style: normal;
+ html {
+   background: url(skyline.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
  }
-
-
- @font-face {
-     font-family: 'Mensch';
-     src: url('<%= asset_path 'mensch-bold.eot?#iefix' %>') format('embedded-opentype'),
-          url('<%= asset_path 'mensch-bold.woff' %>') format('woff'),
-          url('<%= asset_path 'mensch-bold.ttf' %>') format('truetype'),
-          url('<%= asset_path 'mensch-bold.svg#svgFontName' %>') format('svg');
-          font-weight: 700;
-          font-style: normal;
- }
-
-
- @font-face {
-     font-family: 'Mensch';
-     src: url('<%= asset_path 'mensch-thin.eot?#iefix' %>') format('embedded-opentype'),
-          url('<%= asset_path 'mensch-thin.woff' %>') format('woff'),
-          url('<%= asset_path 'mensch-thin.ttf' %>') format('truetype'),
-          url('<%= asset_path 'mensch-thin.svg#svgFontName' %>') format('svg');
-          font-weight: 100;
-          font-style: normal;
- }
-
-
- @font-face {
-     font-family: 'Mensch-Inline';
-     src: url('<%= asset_path 'mensch-inline.eot?#iefix' %>') format('embedded-opentype'),
-          url('<%= asset_path 'mensch-inline.woff' %>') format('woff'),
-          url('<%= asset_path 'mensch-inline.ttf' %>') format('truetype'),
-          url('<%= asset_path 'mensch-inline.svg#svgFontName' %>') format('svg');
-          font-weight: 400;
-          font-style: normal;
- }
-
-
 
 body {
  color:white;
  font-size:16px;
- font-family:Mensch;
- font-weight:400;
+ letter-spacing:6px;
+ font-family:'Mensch';
+ font-weight:100;
+ padding:0px;
+ margin:0px;
+
+a {
+ color:white;
+}
+
 }
 
 h1 {
-
+font-size:127px;
+font-weight:100;
+margin:0px;
+vertical-align:middle;
 }
 
 h2 {
