@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+ @font-face {
+     font-family: 'Mensch';
+     src: url('<%= asset_path 'mensch.eot?#iefix' %>') format('embedded-opentype'),
+          url('<%= asset_path 'mensch.woff' %>') format('woff'),
+          url('<%= asset_path 'mensch.ttf' %>') format('truetype'),
+          url('<%= asset_path 'mensch.svg#svgFontName' %>') format('svg');
+          font-weight: 400;
+          font-style: normal;
+ }
+
+
+ @font-face {
+     font-family: 'Mensch';
+     src: url('<%= asset_path 'mensch-bold.eot?#iefix' %>') format('embedded-opentype'),
+          url('<%= asset_path 'mensch-bold.woff' %>') format('woff'),
+          url('<%= asset_path 'mensch-bold.ttf' %>') format('truetype'),
+          url('<%= asset_path 'mensch-bold.svg#svgFontName' %>') format('svg');
+          font-weight: 700;
+          font-style: normal;
+ }
+
+
+ @font-face {
+     font-family: 'Mensch';
+     src: url('<%= asset_path 'mensch-thin.eot?#iefix' %>') format('embedded-opentype'),
+          url('<%= asset_path 'mensch-thin.woff' %>') format('woff'),
+          url('<%= asset_path 'mensch-thin.ttf' %>') format('truetype'),
+          url('<%= asset_path 'mensch-thin.svg#svgFontName' %>') format('svg');
+          font-weight: 100;
+          font-style: normal;
+ }
+
+
+ @font-face {
+     font-family: 'Mensch-Inline';
+     src: url('<%= asset_path 'mensch-inline.eot?#iefix' %>') format('embedded-opentype'),
+          url('<%= asset_path 'mensch-inline.woff' %>') format('woff'),
+          url('<%= asset_path 'mensch-inline.ttf' %>') format('truetype'),
+          url('<%= asset_path 'mensch-inline.svg#svgFontName' %>') format('svg');
+          font-weight: 400;
+          font-style: normal;
+ }
+
+
+
+body {
+ color:white;
+ font-size:16px;
+ font-family:Mensch;
+ font-weight:400;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
