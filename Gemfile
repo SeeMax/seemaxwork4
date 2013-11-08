@@ -10,6 +10,7 @@ gem 'jquery-rails'
 
 group :development do
   gem 'sqlite3'
+  gem 'thin'
 end
 
 group :production do
