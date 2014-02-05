@@ -1,0 +1,67 @@
+@import "variables.css.scss";
+
+.nav {
+
+  z-index:100;
+  font-size:26px;
+  font-style:normal;
+  line-height:22px;
+  position:fixed;
+  top:15px;
+  width:100%;
+
+  hr {
+    border:none;
+    height:1px;
+    background:white;
+    margin-top:14px;
+    width:95%;
+  }
+
+ ul {
+    display: table;
+    width: 100%;
+    list-style: none;
+    padding:0px;
+    margin:0px auto;
+  }
+
+ ul li {
+    display: table-cell;
+    text-align: center;
+    position:relative;
+    min-width:120px;
+  }
+
+
+
+ul li a {
+    display: block;
+    text-decoration:none;
+  }
+
+
+  li:hover .dot-box {
+    top:-67px;
+  }
+
+.dot-box {
+  position: absolute;
+  left: 50%;
+  top:-100px;
+  -webkit-transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+
+
+  .dot {
+    position:relative;
+    left:-50%;
+    width:40px;
+    height:40px;
+    border-radius:30px;
+  }
+}
+

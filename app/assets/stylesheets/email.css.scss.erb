@@ -1,0 +1,43 @@
+@import "variables.css.scss";
+
+.email-page {
+  background: $black;
+
+  .content{
+    padding-top:220px;
+  }
+
+  .email-link{
+    font-size:90px;
+    text-align:center;
+    margin:0px auto;
+    max-width:900px;
+    padding-bottom:0px;
+    border-bottom: 0px white solid;
+    transition: all 0.5s ease;
+
+    .atsymbol{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size:70px;
+    vertical-align:top;
+    }
+  }
+
+    .email-message {
+      opacity:0;
+      transition: all 0.5s ease;
+      padding-top:10px;
+      text-align:center;
+    }
+
+    .email-link:hover ~ .email-message {
+      opacity:100;
+      padding-top:100px;
+  }
+
+    .email-link:hover{
+     padding-bottom:10px;
+     border-bottom: 1px white solid;
+  }
+}

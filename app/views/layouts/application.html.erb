@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Seemax4</title>
+  <title>SeeMaxWork</title>
+  <%= favicon_link_tag 'seemaxfav.png' %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-  <div class="nav">
-  <hr>
-    <ul>
-      <li><a href="/web">WEB</a></li>
-      <li><a href="/design">DESIGN</a></li>
-      <li><a href="/logos">LOGOS</a></li>
-      <li><a href="/fun">FUN</a></li>
-      <li><a href="/store">STORE</a></li>
-      <li><a href="/contact">EMAIL</a></li>
-    </ul>
-  <hr>
-  </div>
 
+
+
+
+<div class="nav">
+<hr>
+  <ul>
+    <li><div class="dot-box"><div class="dot red"></div></div><a class="transition" id="web" href="/web">WEB</a></li>
+    <li><div class="dot-box"><div class="dot green"></div></div><a class="transition" id ="design" href="/design">DESIGN</a></li>
+    <li><div class="dot-box"><div class="dot yellow"></div></div><a class="transition" href="/logos">LOGOS</a></li>
+    <li><div class="dot-box"><div class="dot blue"></div></div><a class="transition" href="/fun">FUN</a></li>
+    <li><div class="dot-box"><div class="dot grey"></div></div><a class="transition" href="/store">STORE</a></li>
+    <li><div class="dot-box"><div class="dot black"></div></div><a class="transition" href="/email">EMAIL</a></li>
+  </ul>
+<hr>
+</div>
 
 <%= yield %>
 
