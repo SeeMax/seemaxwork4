@@ -1,16 +1,15 @@
-  $(document).ready(function() {
-    $(".fancybox").fancybox({
+$(document).ready(function() {
+  $(".fancybox").fancybox({
     helpers : {
           title: {
               type: 'inside',
-              position: 'bottom'
+              position: 'top'
           },
-
             overlay : {
                 css : {
                     'background' : 'rgba(250, 250, 250, 0.85)'
                 }
             }
         }
-  });
+    });
   });
