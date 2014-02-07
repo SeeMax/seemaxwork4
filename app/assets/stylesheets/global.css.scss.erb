@@ -62,7 +62,7 @@ a {
 .client_box {
   position:relative;
   margin:10px auto;
-  height:80px;
+  max-height:80px;
   background:white;
   transition: all 0.8s ease;
   overflow:hidden;
@@ -100,17 +100,54 @@ a {
     p {
       transition: all .8s ease;
       font-size:40px;
-      line-height:18px;
-      font-weight:400;
+      font-weight:100;
+      line-height:0px;
+      letter-spacing:100;
+      text-align:center;
       width:100%;
-      margin:0;
+      margin:0 auto;
+    }
+
+    .on_screen {
+      width:75%;
+      margin:20px auto;
+
+    img {
+      opacity:0;
+      width:100%;
+      transition: all .8s ease;
+      }
+    }
+
+    .gallery {
+      margin:100px auto;
+      overflow: hidden;
+
+      .gallery_image {
+        vertical-align:middle;
+        float:left;
+        width:32%;
+        margin: 2px 0;
+        padding:0px 0;
+        transition: all .8s ease;
+
+        img {
+          width:100%;
+
+        }
+      }
+
+      .middle {
+        margin:2px 2%;
+      }
     }
   }
 }
 
 .active {
-  min-height:1000px;
-  background:white;
+  max-height:5000px;
+  padding-bottom:50px;
+  margin-bottom:30px;
 
   .toggle {
     opacity:1;
@@ -118,18 +155,26 @@ a {
   }
 
   .title {
-    font-size:40px;
-    line-height:80px;
+    font-size:55px;
+    line-height:70px;
   }
 
   .client_content {
     opacity:1;
+    padding:20px 0;
+
+    .on_screen {
+
+    img {
+      opacity:1;
+      }
+    }
 
     p {
-      font-size:16px;
-      line-height:19px;
+      font-size:20px;
       letter-spacing:0;
-      width:75%;
+      line-height:22px;
+      width:60%;
     }
   }
 }
