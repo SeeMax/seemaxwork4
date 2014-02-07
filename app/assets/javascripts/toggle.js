@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $('.client_full').click(function(){
-    $(this).toggleClass("active");
+  $('.toggle').click(function(){
+    $(this).parent().toggleClass("active");
 });
 
     $('.logo_full').click(function(){
