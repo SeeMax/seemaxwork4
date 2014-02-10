@@ -1,4 +1,4 @@
-@import "variables.css.scss";
+@import "variables.css.scss" , "mixins.css.scss";
 
 .nav {
   z-index:100;
@@ -6,9 +6,33 @@
   letter-spacing:6px;
   font-style:normal;
   line-height:22px;
+  width:95%;
+  min-width:522px;
   position:fixed;
   top:15px;
-  width:100%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  .nav_item {
+    float:left;
+    width:19%;
+    text-align:center;
+    position:relative;
+  }
+
+  .left {
+    margin:0 0% 0 1%;
+  }
+
+  .middle {
+    margin:0 1%;
+  }
+
+  .right {
+   margin:0 1% 0 0%;
+  }
 
   .darkback {
     background:white;
@@ -22,49 +46,15 @@
     height:1px;
     background:white;
     margin-top:14px;
-    width:95%;
-    -webkit-transition:all 0.5s ease-in-out;
-    -moz-transition:all 0.5s ease-in-out;
-    -o-transition:all 0.5s ease-in-out;
-    transition:all 0.5s ease-in-out;
-  }
-
- ul {
-    display: table;
-    width: 100%;
-    list-style: none;
-    padding:0px;
-    margin:0px auto;
-  }
-
- ul li {
-    display: table-cell;
-    text-align: center;
-    position:relative;
-    min-width:120px;
-  }
-
-  ul li a {
-    display: block;
-    text-decoration:none;
-    -webkit-transition:all 0.5s ease-in-out;
-    -moz-transition:all 0.5s ease-in-out;
-    -o-transition:all 0.5s ease-in-out;
-    transition:all 0.5s ease-in-out;
-  }
-
-  li:hover .dot-box {
-    top:-67px;
+    width:100%;
+    @include transition;
   }
 
   .dot-box {
     position: absolute;
     left: 50%;
-    top:-100px;
-    -webkit-transition:all 0.3s ease-in-out;
-    -moz-transition:all 0.3s ease-in-out;
-    -o-transition:all 0.3s ease-in-out;
-    transition:all 0.3s ease-in-out;
+    top:-85px;
+    @include transition;
   }
 
   .dot {
@@ -73,6 +63,10 @@
     width:40px;
     height:40px;
     border-radius:30px;
+  }
+
+  .nav_item:hover .dot-box {
+    top:-68px;
   }
 }
 
@@ -83,7 +77,7 @@
     height:1px;
     background:$grey;
     margin-top:14px;
-    width:95%;
+    width:100%;
     opacity:.2;
   }
 

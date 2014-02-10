@@ -1,4 +1,4 @@
-@import "variables.css.scss";
+@import "variables.css.scss" , "mixins.css.scss";
 
 .email-page {
   background: $black;
@@ -15,21 +15,18 @@
     max-width:900px;
     padding-bottom:0px;
     border-bottom: 0px white solid;
-    transition: all 0.5s ease;
+    @include transition;
 
-    .atsymbol{
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-    -webkit-font-smoothing: antialiased;
+    .text_symbol{
     font-size:70px;
-    vertical-align:top;
     }
   }
 
     .email-message {
       opacity:0;
-      transition: all 0.5s ease;
       padding-top:10px;
       text-align:center;
+      @include transition;
     }
 
     .email-link:hover ~ .email-message {
