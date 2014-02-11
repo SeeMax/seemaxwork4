@@ -107,8 +107,8 @@
 				params  : {
 					autoplay      : 1,
 					hd            : 1,
-					show_title    : 1,
-					show_byline   : 1,
+					show_title    : 0,
+					show_byline   : 0,
 					show_portrait : 0,
 					fullscreen    : 1
 				},

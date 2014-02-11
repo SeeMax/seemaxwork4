@@ -4,7 +4,20 @@
   color:$green;
   background-color:$green;
 
-  img {
-    max-width:200px;
+.close {
+    background:$green;
+  }
+
+  p {
+    a {
+      color:$green;
+      border-bottom: 1px white solid;
+      padding-bottom: 0px;
+      @include transition;
+    }
+
+    a:hover {
+      border-bottom: 1px $green solid;
+    }
   }
 }
