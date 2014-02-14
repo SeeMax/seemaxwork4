@@ -52,6 +52,7 @@ h1 {
 .content{
   padding-top:150px;
   width:95%;
+  height:auto;
   margin:0px auto;
   padding-bottom:110px;
   z-index:2;
@@ -110,6 +111,19 @@ h1 {
     vertical-align:middle;
     padding:2px 0px 0px 20px;
     @include transition;
+
+    .credits {
+      font-weight:100;
+      font-size:10px;
+      letter-spacing:1px;
+      line-height:18px;
+      opacity:0;
+      @include transition;
+
+      text_symbol{
+        font-size:18px;
+      }
+    }
   }
 
   .client_content {
@@ -130,7 +144,7 @@ h1 {
       color:$grey;
       font-size:16px;
       line-height:20px;
-      padding:15px 0px 0px 10px;
+      padding:15px 0px 0px 5px;
     }
 
     .on_screen {
@@ -143,7 +157,7 @@ h1 {
     }
 
     .gallery {
-      margin:100px auto;
+      margin:100px auto 50px auto;
       overflow: hidden;
 
       .gallery_tile {
@@ -159,12 +173,22 @@ h1 {
         }
 
         img {
-          width:80%;
+          width:100%;
         }
+      }
+
+      .left {
+        position:relative;
+        left:0%;
       }
 
       .middle {
         margin:2px 2%;
+      }
+
+      .right {
+        position:relative;
+        right:0%;
       }
     }
   }
@@ -182,6 +206,12 @@ h1 {
   .title {
     font-size:55px;
     line-height:75px;
+
+    .credits {
+      opacity:1;
+      font-size:18px;
+      letter-spacing:6px;
+    }
   }
 
   .client_content {
