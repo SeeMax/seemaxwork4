@@ -157,13 +157,13 @@ h1 {
     }
 
     .gallery {
-      margin:100px auto 50px auto;
+      margin:70px auto 50px auto;
       overflow: hidden;
+      padding:0px 2px;
 
-      .gallery_tile {
+      .gallery_tile, .gallery_tile_2S, .gallery_tile_2L {
         vertical-align:middle;
         float:left;
-        width:32%;
         margin: 2px 0;
         padding:0px 0;
         @include transition;
@@ -174,12 +174,29 @@ h1 {
 
         img {
           width:100%;
+          padding:1px;
+          background:#eeede3;
         }
       }
 
-      .left {
-        position:relative;
-        left:0%;
+      .gallery_tile {
+        width:32%;
+      }
+
+      .gallery_tile_2S {
+        width:29%;
+        margin-left:21%;
+      }
+
+      .gallery_tile_2L {
+        width:59%;
+        margin-left:21%;
+        margin-bottom:30px;
+
+        img {
+          width:100%;
+          background:white;
+        }
       }
 
       .middle {
@@ -187,8 +204,7 @@ h1 {
       }
 
       .right {
-        position:relative;
-        right:0%;
+        margin-left:1%;
       }
     }
   }
