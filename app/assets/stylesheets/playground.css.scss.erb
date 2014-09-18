@@ -1,0 +1,181 @@
+@import "variables.css.scss" , "mixins.css.scss";
+
+@-webkit-keyframes slider {
+  0% { left: 0; }
+  25% { left: -350px;}
+  50% { left: -700px;}
+  100% { left: 0;}
+}
+
+@-moz-keyframes slider {
+  0% { left: 0; opacity: 0; }
+  2% { opacity: 1; }
+  20% { left: 0; opacity: 1; }
+  21% { opacity: 0; }
+  24% { opacity: 0; }
+  25% { left: -350px; opacity: 1; }
+  45% { left: -350px; opacity: 1; }
+  46% { opacity: 0; }
+  48% { opacity: 0; }
+  50% { left: -700px; opacity: 1; }
+  70% { left: -700px; opacity: 1; }
+  72% { opacity: 0; }
+  74% { opacity: 0; }
+  75% { left: -1050px; opacity: 1; }
+  95% { left: -1050px; opacity: 1; }
+  97%  { left: -1050x; opacity: 0;}
+  100% { left: 0; opacity: 0; }
+}
+
+@-o-keyframes slider {
+  0% { left: 0; opacity: 0; }
+  2% { opacity: 1; }
+  20% { left: 0; opacity: 1; }
+  21% { opacity: 0; }
+  24% { opacity: 0; }
+  25% { left: -350px; opacity: 1; }
+  45% { left: -350px; opacity: 1; }
+  46% { opacity: 0; }
+  48% { opacity: 0; }
+  50% { left: -700px; opacity: 1; }
+  70% { left: -700px; opacity: 1; }
+  72% { opacity: 0; }
+  74% { opacity: 0; }
+  75% { left: -1050px; opacity: 1; }
+  95% { left: -1050px; opacity: 1; }
+  97%  { left: -1050x; opacity: 0;}
+  100% { left: 0; opacity: 0; }
+}
+
+@keyframes slider {
+ 0% { left: 0; opacity: 0; }
+ 2% { opacity: 1; }
+ 20% { left: 0; opacity: 1; }
+ 21% { opacity: 0; }
+ 24% { opacity: 0; }
+ 25% { left: -350px; opacity: 1; }
+ 45% { left: -350px; opacity: 1; }
+ 46% { opacity: 0; }
+ 48% { opacity: 0; }
+ 50% { left: -700px; opacity: 1; }
+ 70% { left: -700px; opacity: 1; }
+ 72% { opacity: 0; }
+ 74% { opacity: 0; }
+ 75% { left: -1050px; opacity: 1; }
+ 95% { left: -1050px; opacity: 1; }
+ 97%  { left: -1050x; opacity: 0;}
+ 100% { left: 0; opacity: 0; }
+}
+
+.playground-page {
+  color:$grey;
+  background-color:grey;
+
+  #firstone {
+    opacity:0;
+  }
+
+  #tweener {
+    overflow:hidden;
+    width:350px;
+    position:relative;
+
+    img {
+      width:100%;
+    }
+  }
+
+
+  .tween_button {
+    text-align: center;
+    display:inline-block;
+    margin:10px;
+    width:80px;
+    height:20px;
+    color:white;
+    background:black;
+    border-radius:10px;
+    padding:10px;
+    cursor:pointer;
+  }
+
+  #slide-container {
+    display:inline-block;
+    width:1050px;
+    position:relative;
+  }
+
+  .slide {
+    width:350px;
+    height:480px;
+    float:left;
+  }
+
+  div#slidercontainer {
+    position: relative;
+    overflow: hidden;
+    background: #000
+  }
+
+  div#slidercontainer {
+    width: 350px;
+    height: 480px;
+    margin:0px auto;
+  }
+
+  div#sider img {
+    width: 350px;
+    height: 480px;
+    float: left;
+  }
+
+  div#css3slider {
+    position: absolute;
+    width:1050px;
+    -webkit-animation-name:slider;
+    -webkit-animation-duration:15s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-name:slider;
+    -moz-animation-duration:15s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count:infinite;
+   -o-animation-name:slider;
+    -o-animation-duration:15s;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count:infinite;
+    animation-name:slider;
+    animation-duration:15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+  }
+
+  div#css3slider:hover {
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+  }
+
+  div#css3slider img {
+    float: right;
+  }
+
+  div#slidercontainer:after {
+    content: "❚❚";
+    font-size: 150px;
+    position: absolute;
+    z-index: 12;
+    color: rgba(255,255,255, 0);
+    left: 100px; top: 100px;
+    -webkit-transition: 1s all ease-in-out;
+    -ms-transition: 1s all ease-in-out;
+    -moz-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+  }
+
+  div#slidercontainer:hover:after {
+    color: rgba(255,255,255, 0.6);
+  }
+}
