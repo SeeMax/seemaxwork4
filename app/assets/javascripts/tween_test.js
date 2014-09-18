@@ -6,10 +6,6 @@ window.onload = function(){
         rightBtn = document.getElementById("right");
         firstone = document.getElementById("firstone");
 
-    TweenLite.to(firstone, 4, {
-      opacity:"1",
-    });
-
     leftBtn.onclick = function() {
         TweenLite.to(tweener, 1, {
           right:"+=350px",

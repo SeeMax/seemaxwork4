@@ -1,78 +1,11 @@
 @import "variables.css.scss" , "mixins.css.scss";
 
-@-webkit-keyframes slider {
-  0% { left: 0; }
-  25% { left: -350px;}
-  50% { left: -700px;}
-  100% { left: 0;}
-}
-
-@-moz-keyframes slider {
-  0% { left: 0; opacity: 0; }
-  2% { opacity: 1; }
-  20% { left: 0; opacity: 1; }
-  21% { opacity: 0; }
-  24% { opacity: 0; }
-  25% { left: -350px; opacity: 1; }
-  45% { left: -350px; opacity: 1; }
-  46% { opacity: 0; }
-  48% { opacity: 0; }
-  50% { left: -700px; opacity: 1; }
-  70% { left: -700px; opacity: 1; }
-  72% { opacity: 0; }
-  74% { opacity: 0; }
-  75% { left: -1050px; opacity: 1; }
-  95% { left: -1050px; opacity: 1; }
-  97%  { left: -1050x; opacity: 0;}
-  100% { left: 0; opacity: 0; }
-}
-
-@-o-keyframes slider {
-  0% { left: 0; opacity: 0; }
-  2% { opacity: 1; }
-  20% { left: 0; opacity: 1; }
-  21% { opacity: 0; }
-  24% { opacity: 0; }
-  25% { left: -350px; opacity: 1; }
-  45% { left: -350px; opacity: 1; }
-  46% { opacity: 0; }
-  48% { opacity: 0; }
-  50% { left: -700px; opacity: 1; }
-  70% { left: -700px; opacity: 1; }
-  72% { opacity: 0; }
-  74% { opacity: 0; }
-  75% { left: -1050px; opacity: 1; }
-  95% { left: -1050px; opacity: 1; }
-  97%  { left: -1050x; opacity: 0;}
-  100% { left: 0; opacity: 0; }
-}
-
-@keyframes slider {
- 0% { left: 0; opacity: 0; }
- 2% { opacity: 1; }
- 20% { left: 0; opacity: 1; }
- 21% { opacity: 0; }
- 24% { opacity: 0; }
- 25% { left: -350px; opacity: 1; }
- 45% { left: -350px; opacity: 1; }
- 46% { opacity: 0; }
- 48% { opacity: 0; }
- 50% { left: -700px; opacity: 1; }
- 70% { left: -700px; opacity: 1; }
- 72% { opacity: 0; }
- 74% { opacity: 0; }
- 75% { left: -1050px; opacity: 1; }
- 95% { left: -1050px; opacity: 1; }
- 97%  { left: -1050x; opacity: 0;}
- 100% { left: 0; opacity: 0; }
-}
-
 .playground-page {
   color:$grey;
   background-color:grey;
 
-  #firstone {
-    opacity:0;
+  .firstone {
+    position:relative;
   }
 
   #tweener {
@@ -85,6 +18,11 @@
     }
   }
 
+.game_svg {
+  width:90%;
+  margin:0px auto 2000px auto;
+
+}
 
   .tween_button {
     text-align: center;
