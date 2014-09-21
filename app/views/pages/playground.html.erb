@@ -5,7 +5,7 @@
 </div>
 <script type="text/javascript">
   var s = Snap("#game_logo");
-  var logo = "assets/game.svg";
+  var logo = "<%= asset_path 'game.svg'  %>";
 
   Snap.load(logo, function (f) {
     s.append(f);
