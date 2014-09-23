@@ -11,48 +11,77 @@
     s.append(f);
 
     move1 = function(){
-      f.select("#g1").animate({"points":[212.8, 52.8, 9.5, 52.8, 49.5, 5.8, 176.3, 5.8]},300,mina.easeinout, move2);
+      f.select("#ra1").animate({"points":[212.8, 52.8, 2.5, 52.8, 49.5, 5.8, 176.3, 5.8 ]},200,mina.easeinout, move2);
     };
 
     move2 = function(){
-      f.select("#g2").animate({"points":[49.5, 5.8, 49.5, 284.3, 2.5, 247.3, 2.5, 52.3]},400,mina.easeinout);
-      f.select("#g6blank").animate({"points":[137.1, 98.8, 137.1, 305.9, 184.5, 352.9, 184.2, 145.3]},500,mina.easeout, move3);
+      f.select("#ra2").animate({"points":[49.5, 5.8, 49.5, 294.3, 2.5, 247.3, 2.5, 52.3 ]},200,mina.easeinout, move3);
     };
 
     move3 = function(){
-      f.select("#g3").animate({"points":[230.9, 247.3, 2.5, 247.3, 49.9, 294.3, 194.4, 294.3]},300,mina.backout);
-      f.select("#ga1").animate({"points":[294.2, 305.9, 137.1, 305.9, 184.5, 352.9, 247.1, 352.9]},300,mina.easein, move4);
+      f.select("#ra3").animate({"points":[230.9, 247.3, 2.5, 247.3, 49.9, 294.3, 194.4, 294.3 ]},200,mina.easeinout, move4);
+      f.select("#rb1").animate({"points":[137.1, 98.8, 137.1, 305.9, 184.5, 352.9, 184.5, 145.3 ]},200,mina.easeinout);
     };
 
     move4 = function(){
-      f.select("#g4").animate({"points":[230.9, 247.3, 85, 136.1, 85, 183.1, 188.3, 264.2]},400,mina.backout, move5);
-      f.select("#g8").animate({"width":47},200,mina.easein);
-      f.select("#a4").animate({"points":[247.1, 352.9, 247.1, 206.6, 294.2, 206.6, 294.2, 305.9]},300,mina.easein);
+      f.select("#ra4").animate({"points":[230.9, 247.3, 85, 136.1, 85, 183.1, 207.4, 277.6 ]},200,mina.backout, move5);
+      f.select("#rb2").animate({"points":[294.2, 305.9, 137.1, 305.9, 184.5, 352.9, 247.1, 352.9 ]},200,mina.easeinout);
     };
 
     move5 = function(){
-      f.select("#g5").animate({"points":[294.2, 136.1, 85, 136.1, 85, 183.1, 247.6, 183.1]},400,mina.easein);
-      f.select("#g6").animate({"points":[137.1, 98.8, 137.1, 98.8, 184.5, 149.4, 184.5, 149.4]},300,mina.easeout);
-      f.select("#g7").animate({"width":47},150,mina.easein, move6);
+      f.select("#ra5").animate({"points":[294.2, 136.1, 85, 136.1, 85, 183.1, 247.6, 183.1 ]},200,mina.backin, move6);
+      f.select("#rb3").animate({"points":[247.1, 352.9, 247.1, 206.6, 294.2, 159.6, 294.2, 305.9 ]},200,mina.easeinout);
     };
 
     move6 = function(){
-      f.select("#a1").animate({"height":82.4},300,mina.easein, move7);
+      f.select("#ra6").animate({"points":[294.2, 7.8, 294.2, 137.1, 247.1, 183.1, 247.1, 54.9 ]},200,mina.easeinout, move7);
+      f.select("#rb4").animate({"points":[525.7, 159.6, 293.6, 159.6, 247.1, 206.6, 572.2, 206.6 ]},200,mina.easeinout);
     };
 
     move7 = function(){
-      f.select("#a2").animate({"points":[362.6, 7.8, 293.6, 7.8, 247.1, 54.9, 409.5, 54.9]},300,mina.easein, move8);
+      f.select("#ra7").animate({"points":[362.5, 7.8, 293.6, 7.8, 247.1, 54.9, 409.6, 54.9 ]},200,mina.easeinout, move8);
+      f.select("#rb5").animate({"points":[572.2, 206.6, 572.2, 285.3, 525.2, 238.2, 525.2, 159.6 ]},200,mina.easeinout);
     };
 
     move8 = function(){
-      f.select("#a3").animate({"points":[409.6, 352.9, 409.6, 54.4, 362.5, 7.8, 362.5, 305.9]},300,mina.easein, move9);
+      f.select("#ra8").animate({"points":[409.6, 352.9, 409.6, 54.4, 362.5, 7.8, 362.5, 305.9 ]},200,mina.easeinout, move9);
+      f.select("#rb6").animate({"points":[585.8, 285.3, 572.2, 285.3, 525.2, 238.2, 632.8, 238.2 ]},200,mina.easeinout);
     };
 
     move9 = function(){
-      f.select("#am2").animate({"points":[448.3, 352.9, 409.6, 352.9, 362.5, 305.9, 495.3, 305.9]},300,mina.easein);
+      f.select("#ra9").animate({"points":[448.3, 352.9, 409.6, 352.9, 362.5, 305.9, 495.3, 305.9 ]},200,mina.backout, move10);
+      f.select("#rb7").animate({"points":[585.8, 51.8, 585.8, 285.3, 632.8, 238.2, 632.8, 4.8 ]},200,mina.easeinout);
     };
 
+    move10 = function(){
+      f.select("#ra10").animate({"points":[495.3, 5.3, 495.3, 305.9, 448.3, 352.9, 448.3, 52.8 ]},200,mina.easeinout, move11);
+      f.select("#rb8").animate({"points":[585.8, 51.8, 711.9, 51.8, 664.8, 4.8, 632.3, 4.8 ]},200,mina.easeinout);
+    };
 
-    setTimeout(move1, 1000);
+    move11 = function(){
+      f.select("#ra11").animate({"points":[448.3, 52.3, 572.2, 52.3, 524.8, 5.3, 495.3, 5.3 ]},200,mina.easeinout, move12);
+      f.select("#rb9").animate({"points":[711.9, 51.8, 711.9, 357.2, 664.8, 310.2, 664.8, 4.8 ]},200,mina.easeinout);
+    };
+
+    move12 = function(){
+      f.select("#ra12").animate({"points":[572.2, 52.3, 572.2, 177, 525.2, 129.9, 525.2, 5.3 ]},200,mina.easeinout, move13);
+      f.select("#rb10").animate({"points":[752.2, 357.2, 711.9, 357.2, 664.8, 310.2, 799.6, 310.2 ]},200,mina.easeinout);
+    };
+
+    move13 = function(){
+      f.select("#ra13").animate({"points":[905.6, 176.9, 572.2, 176.9, 525.2, 129.9, 905.6, 129.9 ]},200,mina.backout, move14);
+      f.select("#rb11").animate({"points":[799.4, 12.3, 799.4, 310.2, 752.4, 357.2, 752.4, 58.8 ]},200,mina.easeinout);
+    };
+
+    move14 = function(){
+      f.select("#ra14").animate({"points":[905.6, 177.1, 725.9, 299.6, 725.9, 252.6, 905.6, 129.9 ]},200,mina.backin, move15);
+      f.select("#rb12").animate({"points":[955.2, 12.3, 799.4, 12.3, 752.4, 59.3, 908.2, 59.3 ]},200,mina.easeinout);
+    };
+
+    move15 = function(){
+      f.select("#ra15").animate({"points":[961.9, 252.6, 725.9, 252.6, 725.9, 299.6, 915.4, 299.6 ]},200,mina.backin);
+    };
+
+    setTimeout(move1, 100);
   });
 </script>
