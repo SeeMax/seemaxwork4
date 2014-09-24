@@ -1,10 +1,14 @@
 <div class="pages playground-page">
   <div class="content">
-    <div class="button" onclick="move1()">play the game</div>
+    <div class="button">play the game</div>
     <div id="game_logo"><object></object></div>
   </div>
 </div>
 <script type="text/javascript">
+
+$(".button").click(function() {
+    move1();
+});
 
   var s = Snap("object");
   var logo = "<%= asset_path 'game.svg'  %>";
