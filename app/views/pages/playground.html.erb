@@ -1,10 +1,12 @@
 <div class="pages playground-page">
   <div class="content">
-    <div id="game_logo"></div>
+    <div class="button" onclick="move1()">play the game</div>
+    <div id="game_logo"><object></object></div>
   </div>
 </div>
 <script type="text/javascript">
-  var s = Snap("#game_logo");
+
+  var s = Snap("object");
   var logo = "<%= asset_path 'game.svg'  %>";
 
   Snap.load(logo, function (f) {
@@ -19,8 +21,11 @@
     };
 
     move3 = function(){
-      f.select("#ra3").animate({"points":[230.9, 247.3, 2.5, 247.3, 49.9, 294.3, 194.4, 294.3 ]},200,mina.easeinout, move4);
-      f.select("#rb1").animate({"points":[137.1, 98.8, 137.1, 305.9, 184.5, 352.9, 184.5, 145.3 ]},200,mina.easeinout);
+      f.select("#ra3").animate({"points":[230.9, 247.3, 2.5, 247.3, 49.9, 294.3, 194.4, 294.3 ]},200,mina.easeinout);
+      setTimeout(function(){
+        f.select("#g3").animate({ width:47 },0,mina.easeinout);
+      },100)
+      f.select("#rb1").animate({"points":[137.1, 98.8, 137.1, 305.9, 184.5, 352.9, 184.5, 145.3 ]},200,mina.easeinout, move4);
     };
 
     move4 = function(){
@@ -29,8 +34,12 @@
     };
 
     move5 = function(){
-      f.select("#ra5").animate({"points":[294.2, 136.1, 85, 136.1, 85, 183.1, 247.6, 183.1 ]},200,mina.backin, move6);
-      f.select("#rb3").animate({"points":[247.1, 352.9, 247.1, 206.6, 294.2, 159.6, 294.2, 305.9 ]},200,mina.easeinout);
+      f.select("#ra5").animate({"points":[294.2, 136.1, 85, 136.1, 85, 183.1, 247.6, 183.1 ]},200,mina.backin);
+      f.select("#rb3").animate({"points":[247.1, 352.9, 247.1, 206.6, 294.2, 159.6, 294.2, 305.9 ]},200,mina.easeinout, move6);
+        setTimeout(function(){
+          f.select("#g2").animate({ width:47 },0,mina.easeinout);
+          f.select("#g1").animate({"points":[137.1, 118.4, 157, 118.4, 175, 136.1, 137.1, 136.1 ]},0,mina.easeinout);
+        },120)
     };
 
     move6 = function(){
@@ -45,6 +54,10 @@
 
     move8 = function(){
       f.select("#ra8").animate({"points":[409.6, 352.9, 409.6, 54.4, 362.5, 7.8, 362.5, 305.9 ]},200,mina.easeinout, move9);
+      setTimeout(function(){
+        f.select("#g4").animate({ height:47 },0,mina.easeinout);
+        f.select("#g5").animate({ height:47 },0,mina.easeinout);
+      },50)
       f.select("#rb6").animate({"points":[585.8, 285.3, 572.2, 285.3, 525.2, 238.2, 632.8, 238.2 ]},200,mina.easeinout);
     };
 
@@ -55,6 +68,10 @@
 
     move10 = function(){
       f.select("#ra10").animate({"points":[495.3, 5.3, 495.3, 305.9, 448.3, 352.9, 448.3, 52.8 ]},200,mina.easeinout, move11);
+      setTimeout(function(){
+        f.select("#g6").animate({ height:17.7 },0,mina.easeinout);
+        f.select("#g7").animate({ height:17.7 },0,mina.easeinout);
+      },100)
       f.select("#rb8").animate({"points":[585.8, 51.8, 711.9, 51.8, 664.8, 4.8, 632.3, 4.8 ]},200,mina.easeinout);
     };
 
@@ -70,6 +87,18 @@
 
     move13 = function(){
       f.select("#ra13").animate({"points":[905.6, 176.9, 572.2, 176.9, 525.2, 129.9, 905.6, 129.9 ]},200,mina.backout, move14);
+      setTimeout(function(){
+        f.select("#g8").animate({ width:46.6 },0,mina.easeinout);
+        f.select("#g9").animate({ width:46.6 },0,mina.easeinout);
+      },20)
+      setTimeout(function(){
+        f.select("#g10").animate({ width:47 },0,mina.easeinout);
+        f.select("#g11").animate({ width:47 },0,mina.easeinout);
+      },40)
+      setTimeout(function(){
+        f.select("#g12").animate({ width:47 },0,mina.easeinout);
+        f.select("#g13").animate({ width:47 },0,mina.easeinout);
+      },80)
       f.select("#rb11").animate({"points":[799.4, 12.3, 799.4, 310.2, 752.4, 357.2, 752.4, 58.8 ]},200,mina.easeinout);
     };
 
@@ -80,8 +109,10 @@
 
     move15 = function(){
       f.select("#ra15").animate({"points":[961.9, 252.6, 725.9, 252.6, 725.9, 299.6, 915.4, 299.6 ]},200,mina.backin);
+      setTimeout(function(){
+        f.select("#g14").animate({ width:47 },0,mina.easeinout);
+      },100)
     };
-
-    setTimeout(move1, 100);
   });
+
 </script>
