@@ -1,0 +1,44 @@
+<div class="pages playground3-page">
+  <div class="content">
+    <div id="earth"></div>
+    <div class="button">Soooooo</div>
+    <div id="sun"></div>
+    <div class="star"></div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+$(".button").click(function() {
+    star1();
+});
+
+  var s1 = Snap("#earth");
+  var s2 = Snap(".star")
+  var earth = "<%= asset_path 'earth.svg'  %>";
+  var star = "<%= asset_path 'star.svg'  %>";
+
+  Snap.load(earth, function (f) {
+    s1.append(f);
+
+  function snapPoints(id, x1, y1, x2, y2, x3, y3, x4, y4, time, kind) {
+    f.select(id).animate({"points":[x1, y1, x2, y2, x3, y3, x4, y4 ]},time,mina.kind);
+  }
+
+    move1 = function(){
+      snapPoints("#ra1", 212.8, 52.8, 2.5, 52.8, 49.5, 5.8, 176.3, 5.8, 200, "bounce");
+    };
+  });
+
+  Snap.load(star, function (f) {
+    s2.append(f);
+
+    star1 = function(){
+      snapPoints("#test1", 212.8, 52.8, 2.5, 52.8, 49.5, 5.8, 176.3, 5.8, 0, "bounce");
+    };
+  });
+
+
+</script>

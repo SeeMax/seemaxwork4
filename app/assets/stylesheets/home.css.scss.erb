@@ -1,53 +1,84 @@
 @import "variables.css.scss" , "mixins.css.scss";
 
 .main {
+position: relative;
 min-width:100%;
 min-height:100%;
 
-.logo {
-  margin: 0 auto;
-  width:100%;
-  padding-top:160px;
-  text-align:center;
-  font-size:40px;
-  letter-spacing:6px;
-
-  img {
-    padding:20px 0 25px 0;
-  }
-
-  p {
-    font-size:16px;
-    line-height:24px;
-    vertical-align:middle;
-    font-weight:400;
+  .logo {
+    position: absolute;
     text-align:center;
-    letter-spacing:1px;
-  }
-
-  .text_symbol {
-    letter-spacing:0px;
-    font-size:24px;
-    vertical-align:middle;
-  }
-}
-
-.bg {
-  z-index:-1;
-}
-
-  img.bg {
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
-
-    /* Set up proportionate scaling */
+    font-size:60px;
+    letter-spacing:6px;
+    vertical-align: middle;
     width: 100%;
-    height: auto;
+    bottom:40px;
+    z-index: 101;
 
-    /* Set up positioning */
+    img {
+      display: inline-block;
+      width:50px;
+    }
+
+    p {
+      font-size:16px;
+      line-height:24px;
+      vertical-align:middle;
+      font-weight:400;
+      text-align:center;
+      letter-spacing:1px;
+    }
+
+    .text_symbol {
+      letter-spacing:0px;
+      font-size:24px;
+      vertical-align:middle;
+    }
+  }
+
+  .smalllogo {
+    position: absolute;
+    width:60px;
+    right: 40px;
+    bottom: 40px;
+    z-index: 102;
+  }
+
+  .video-overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+  }
+
+  .mobile--background {
+    display: none;
     position: fixed;
-    bottom: 0;
-    right: 0;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+
+      img {
+        position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          min-width: 50%;
+          min-height: 50%;
+      }
+  }
+
+
+  .homevideo {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
   }
 }

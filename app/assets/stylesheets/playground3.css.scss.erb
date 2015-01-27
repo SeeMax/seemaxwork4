@@ -1,0 +1,35 @@
+@import "variables.css.scss" , "mixins.css.scss" , "animations.css.scss";
+
+
+.playground3-page {
+  color:$grey;
+  background-color:grey;
+  min-height:100%;
+
+
+  #earth {
+    width:50%;
+    height:auto;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+
+  .star {
+    width:10%;
+    opacity:1;
+    position:relative;
+    right:0;
+    -webkit-animation: slidein 2s ease-out -2s 1 alternate forwards;
+
+    svg {
+
+    }
+  }
+}
