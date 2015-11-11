@@ -16,21 +16,37 @@
       ga('send', 'pageview');
     </script>
   </head>
-  <div class="nav">
-    <hr>
-    <div class="nav_item"><div class="dot-box"><div class="dot red"></div></div><a class="transition" href="/work">WORK</a></div>
-    <div class="nav_item left"><div class="dot-box"><div class="dot yellow"></div></div><a class="transition" href="/logos">LOGOS</a></div>
-    <div class="nav_item middle"><div class="dot-box"><div class="dot green"></div></div><a class="transition" href="/fun">FUN</a></div>
-    <div class="nav_item"><div class="dot-box"><div class="dot blue"></div></div><a class="transition" href="/gear">GEAR</a></div>
-    <div class="nav_item"><div class="dot-box"><div class="dot black"></div></div><a class="transition" href="/email">EMAIL</a></div>
-    <div style="clear: both;"></div>
-    <hr>
-  </div>
-  <div style="clear: both;"></div>
+  <nav>
+    <div class="nav_item">
+      <div class="dot red"></div>
+      <a class="transition" href="/work">
+        WORK
+      </a>
+    </div>
+    <div class="nav_item">
+      <div class="dot yellow"></div>
+      <a class="transition" href="/logos">
+        LOGOS
+      </a>
+    </div>
+    <div class="nav_item">
+      <div class="dot green"></div>
+      <a class="transition" href="/fun">
+        FUN
+      </a>
+    </div>
+    <div class="nav_item">
+      <div class="dot black"></div>
+      <a class="transition" href="/email">
+        EMAIL
+      </a>
+    </div>
+  </nav>
+
   <%= yield %>
+
   <footer>
     <%= render 'layouts/footer' %>
-
   </footer>
   </body>
 </html>

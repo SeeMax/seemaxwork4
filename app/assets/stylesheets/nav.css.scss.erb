@@ -1,85 +1,61 @@
 @import "variables.css.scss" , "mixins.css.scss";
 
-.nav {
+nav {
+  display:flex;
+  align-content: stretch;
+  justify-content:space-between;
   z-index:100;
   font-size:26px;
   letter-spacing:6px;
   font-style:normal;
   line-height:22px;
-  width:95%;
+  padding: 0 2%;
   min-width:522px;
   position:fixed;
   top:15px;
   right: 0;
   left: 0;
-  margin-right: auto !important;
+  margin-right: auto;
   margin-left: auto;
-
-
-  .nav_item {
-    float:left;
-    width:19%;
-    text-align:center;
-    position:relative;
-  }
-
-  .left {
-    margin-left:1%;
-  }
-
-  .middle {
-    margin:0 1%;
-  }
-
-  .right {
-   margin-right:1%;
-  }
-
-  hr {
-    border:none;
-    height:1px;
-    background:white;
-    margin-top:14px;
-    width:100%;
-    @include transition;
-  }
-
-  .dot-box {
-    position: absolute;
-    left: 50%;
-    top:-85px;
-    @include transition;
-  }
-
-  .dot {
-    position:relative;
-    left:-50%;
-    width:40px;
-    height:40px;
-    border-radius:30px;
-  }
-
-  .nav_item:hover .dot-box {
-    top:-68px;
-  }
+  @include transition;
 }
 
-.darklink {
+.nav_item {
+  position:relative;
+  flex-grow: 1;
+  text-align:center;
+  padding: 15px 0;
+}
 
-  hr {
-    border:none;
-    height:1px;
-    background:$grey;
-    margin-top:14px;
-    opacity:.2;
-  }
+.dot {
+  z-index: -1;
+  position: absolute;
+  left:-5px;
+  right:0;
+  top: -70px;
+  margin: 0px auto;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  @include transition;
+}
 
-  a {
-    color:$grey;
-    opacity:.5;
-  }
+.nav_item:hover .dot {
+  top:-35px;
+}
 
-  a:hover {
-    opacity:1;
-  }
+.work-darklink {
+  background: $red;
+}
+
+.logos-darklink {
+  background: $yellow;
+}
+
+.fun-darklink {
+  background: $green;
+}
+
+.email-darklink {
+  background: $black;
 }

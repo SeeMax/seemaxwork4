@@ -10,7 +10,12 @@
 html {
   width:100%;
   height:100%;
- }
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
  color:white;
@@ -44,13 +49,11 @@ h1 {
 .pages {
   min-height:100%;
   width:100%;
-  margin-top:-95px;
-  padding-top:95px;
   position:relative;
 }
 
 .content{
-  padding-top:150px;
+  padding-top:100px;
   width:95%;
   height:auto;
   margin:0px auto;
@@ -104,6 +107,7 @@ h1 {
   }
 
   .title {
+    text-transform: uppercase;
     font-size:70px;
     font-weight:400;
     letter-spacing:6px;
@@ -113,6 +117,7 @@ h1 {
     @include transition;
 
     .credits {
+      text-transform: uppercase;
       font-weight:100;
       font-size:10px;
       letter-spacing:1px;
@@ -148,6 +153,7 @@ h1 {
     }
 
     .on_screen {
+      position: relative;
       width:75%;
       margin:20px auto;
 
@@ -156,14 +162,55 @@ h1 {
       }
     }
 
+    .laptop-svg {
+      width:100%;
+      max-width: 100%;
+    }
+
+    .small-mobile-screen {
+      position: absolute;
+      width:20%;
+      top:6.5%;
+      right:3.5%;
+      text-align:center;
+
+      object {
+        max-width: 100%;
+      }
+    }
+
+
+    .visit-text {
+      margin:-20px auto 0 auto;
+      text-align: center;
+      opacity: .8;
+
+      p {
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        color:$grey;
+        font-size:14px;
+        padding: 0;
+        padding-bottom: 50px;
+        line-height:18px;
+      }
+    }
+
+    .full-mobile-screen {
+      padding-top: 60px;
+      width:60%;
+      margin:0 auto;
+      text-align:center;
+    }
+
     .gallery {
+      display:flex;
+      flex-wrap:wrap;
       margin:70px auto 50px auto;
       overflow: hidden;
       padding:0px 2px;
 
       .gallery_tile, .gallery_tile_2S, .gallery_tile_2L {
-        vertical-align:middle;
-        float:left;
+
         margin: 2px 0;
         padding:0px 0;
         @include transition;
@@ -180,31 +227,21 @@ h1 {
       }
 
       .gallery_tile {
-        width:32%;
+        width:33.33333%;
       }
 
-      .gallery_tile_2S {
-        width:29%;
-        margin-left:21%;
+      .gallery_tile_2 {
+        width:50%;
       }
 
-      .gallery_tile_2L {
-        width:59%;
-        margin-left:21%;
-        margin-bottom:30px;
-
-        img {
-          width:100%;
-          background:white;
-        }
+      .gallery_image {
+        width:98%;
+        margin:0 auto;
       }
 
-      .middle {
-        margin:2px 2%;
-      }
-
-      .right {
-        margin-left:1%;
+      img {
+        width:100%;
+        background:white;
       }
     }
   }
@@ -240,4 +277,28 @@ h1 {
   position:absolute;
   right:40px;
   bottom:20px;
+}
+
+
+
+
+
+@media (min-width: 700px) and (max-width: 1100px) {
+
+  .client_box {
+
+    .client_content {
+
+      .on_screen {
+        margin-top:40px;
+        width:95%;
+      }
+
+      .text {
+        margin-top: 30px;
+        width:85%;
+      }
+    }
+  }
+
 }

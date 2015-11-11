@@ -8,6 +8,9 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'jquery-rails'
 
+# Auto Prefix CSS
+gem 'autoprefixer-rails'
+
 group :development do
   gem 'sqlite3'
   gem 'thin'

@@ -1,9 +1,22 @@
 $(document).ready(function() {
   $('.toggle').click(function(){
-    $(this).parent().toggleClass("active");
-  });
+    if ($(this).parent().hasClass('active')) {
+      $('.client_box').removeClass("active");
+    } else {
+      $('.client_box').removeClass("active");
+      $(this).parent().addClass('active');
 
-  $('.logo_full').click(function(){
-    $(this).toggleClass("active");
+      setTimeout(
+        function()
+        {
+          $('html, body').animate({
+            scrollTop: $('.active').offset().top - 70
+          }, 'slow');
+        }, 570);
+    }
   });
 });
+
+
+
+
