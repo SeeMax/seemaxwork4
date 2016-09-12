@@ -1,0 +1,29 @@
+@import "variables.css.scss" , "mixins.css.scss";
+
+.morphs-page {
+  background: $black;
+  letter-spacing:6px;
+
+
+.client_box {
+    background: $grey;
+  }
+
+  .close-button {
+    background:black;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+    svg {
+      width:70%;
+      height:70%;
+    }
+
+    object {
+      width:70%;
+      height:70%;
+    }
+  }
+
+}
