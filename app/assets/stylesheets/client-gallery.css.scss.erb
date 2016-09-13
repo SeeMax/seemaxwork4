@@ -1,0 +1,67 @@
+@import "variables.css.scss";
+
+.gallery {
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  margin:70px auto 50px auto;
+  opacity:0;
+}
+
+.gallery_tile {
+  display: flex;
+  align-items:center;
+  justify-content:middle;
+  position: relative;
+  cursor: pointer;
+  width:32%;
+
+
+  img {
+    position: relative;
+    z-index: 100;
+    width:98%;
+    margin:0 auto;
+    background:white;
+    border: 1px solid #eeede3;
+  }
+}
+
+.gallery-close {
+  position: absolute;
+  top:30px;
+  left:0;
+  right:0;
+  display:block;
+  width:98%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  text-align: right;
+  font-weight: 200;
+  font-size:16px;
+  letter-spacing: 1px;
+  cursor:pointer;
+  opacity:0;
+  z-index: 99;
+}
+
+
+.gallery_tile_2 {
+  display: flex;
+  align-items:center;
+  justify-content:middle;
+  position: relative;
+  cursor: pointer;
+  width:50%;
+
+  img {
+    position: relative;
+    z-index: 100;
+    width:98%;
+    margin:0 auto;
+    background:white;
+    border: 1px solid #eeede3;
+  }
+}
+

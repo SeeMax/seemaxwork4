@@ -1,4 +1,4 @@
-@import "variables.css.scss" , "mixins.css.scss";
+@import "variables.css.scss";
 
 nav {
   display:flex;
@@ -12,12 +12,18 @@ nav {
   padding: 0 2%;
   min-width:522px;
   position:fixed;
-  top:15px;
+  top:0;
   right: 0;
   left: 0;
+  /*background: rgba(255, 255, 255, .85);*/
   margin-right: auto;
   margin-left: auto;
-  @include transition;
+
+  a {
+    font-size:18px;
+    color:$black;
+    font-weight: 400;
+  }
 }
 
 .nav_item {
@@ -37,25 +43,8 @@ nav {
   width:40px;
   height:40px;
   border-radius:50%;
-  @include transition;
 }
 
 .nav_item:hover .dot {
   top:-35px;
-}
-
-.work-darklink {
-  background: $red;
-}
-
-.logos-darklink {
-  background: $yellow;
-}
-
-.fun-darklink {
-  background: $green;
-}
-
-.email-darklink {
-  background: $black;
 }

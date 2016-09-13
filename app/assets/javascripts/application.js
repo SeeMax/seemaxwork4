@@ -1,8 +1,13 @@
 //= require jquery
 //= require jquery_ujs
+//= require jquery.turbolinks
 //= require jquery.fancybox
 //= require jquery.fancybox-media
-//= require snap
-//= require TweenLite.min
+//= require jquery.lazy.min
+//= require turbolinks
+//= require TimelineMax.min
+//= require TweenMax.min
+//= require ScrollToPlugin.min
+//= require CSSPlugin.min
 //= require responsiveslides.min
 //= require_tree .
