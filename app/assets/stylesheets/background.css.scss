@@ -1,11 +1,3 @@
-.animated-back-container {
-  width:100%;
-  height:100%;
-  position: absolute;
-  top:0;
-  left:0;
-}
-
 .animated-back {
   position:fixed;
   width:100%;
@@ -14,6 +6,7 @@
   top:0;
   left:0;
   fill:white;
+  z-index:-99;
 }
 
 .stripe {
@@ -22,13 +15,12 @@
 
 .wallpaper-back {
   position:fixed;
-  display: flex;
-  align-items:center;
-  justify-content:center;
   width:100%;
   height:100%;
   min-height:100%;
   top:0;
   left:0;
   background: black;
+  z-index:-105;
 }
+

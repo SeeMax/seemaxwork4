@@ -1,17 +1,24 @@
 @import "variables.css.scss";
 
-.email-page {
-  color:$black;
+.email-section {
+  position: fixed;
+  z-index:99;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  left:100%;
+  top:0;
+  height:100%;
+  width:80%;
+  color:white;
   letter-spacing:6px;
 
-  .content{
-    padding-top:220px;
-  }
+
 
   .email-text-container {
-    width: 95%;
+    width: 90%;
     font-size: 42px;
-    font-weight: 200;
+    font-weight: 700;
     margin: 0 auto;
 
     svg {
@@ -19,6 +26,7 @@
       height:auto;
 
       text {
+        fill:white;
         letter-spacing: 6px;
       }
     }
