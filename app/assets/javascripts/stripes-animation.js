@@ -49,7 +49,7 @@ function logoStripeIn() {
       uniEase =  Back.easeOut.config(.5)
       uniTime = .5;
 
-  tl.to(stripeBack, uniTime, {attr:{points:"20 980, 20 20, 980 20, 980 980"}, ease:uniEase}, "goOut")
+  tl.to(stripeBack, uniTime, {attr:{points:"0 1000, 0 30, 1000 30, 1000 1000"}, ease:uniEase}, "goOut")
     .to(stripeColor, uniTime,  {attr:{'stroke':'#eaeaea', 'stroke-width':'4'}}, "goOut+=.15");
 
   return tl;

@@ -79,7 +79,7 @@ $(document).ready(function() {
     tl.add(homeStripeInOne(),"logoIn")
       .add(homeLogoAnimation(),"logoIn+=1")
       .add(homeStripeInTwo(), "-=.5")
-      .add(codepenIn(),"+=.75")
+      // .add(codepenIn(),"+=.75")
   }
 
 

@@ -12,7 +12,6 @@ $(document).ready(function () {
   else {	
     homePageLoad();
     $(".nav-link").addClass("white-nav");	
-    // $('.wallpaper-back')	.css('background', 'white')
   }
 
 });
