@@ -1,0 +1,19 @@
+<div class="wallpaper-back">
+  <!-- <img class="wallpaper-logo" src=<%= asset_path 'seemaxlogo_2.png'  %> > -->
+</div>
+
+<svg class="animated-back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+  <defs>
+    <!-- SET DIAGONAL FILL PATTERN -->
+    <pattern id="diagonal" width="4" height="1" patternTransform="rotate(-45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" stroke-width="1.5" stroke="#231F20"/>
+    </pattern>
+  </defs>
+
+  <!-- WHITE BACKGROUND -->
+  <polygon class="solid" id="solidBack" fill="white"  points="0 1000, 0 0, 0 800, 0 1000" />
+  
+  <!-- STRIPED BACKGROUND -->
+  <!-- <polygon class="stripes" points="500 570, 500 550, 560 550, 560 20, 570 20, 570 570" /> -->
+  <polygon class="stripe" id="stripe" fill="url(#diagonal)"  points="0 1000, 0 0, 0 1001, 300 1001" />
+</svg>

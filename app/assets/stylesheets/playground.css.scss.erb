@@ -1,4 +1,4 @@
-@import "variables.css.scss" , "mixins.css.scss";
+@import "variables.css.scss";
 
 
 .playground-page {
@@ -7,6 +7,8 @@
   min-height:100%;
 
   .button {
+    position:relative;
+    z-index:100;
     width:300px;
     margin:0px auto;
     padding:10px 20px;
@@ -18,142 +20,15 @@
     cursor:pointer;
   }
 
-  polygon, rect {
-    opacity:1;
-  }
-
-  #game_logo {
+  .logo {
     width:100%;
     height:auto;
     max-height:600px;
   }
 
-    object {
-      display: block;
-      height: auto;
-      position: relative;
-      padding-top: 50%;
-      max-height:600px;
-  }
-
-    svg {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-  .firstone {
-    position:relative;
-  }
-
-  #tweener {
-    overflow:hidden;
-    width:350px;
-    position:relative;
-
-    img {
-      width:100%;
-    }
-  }
-
-.game_svg {
-  width:90%;
-  margin:0px auto 2000px auto;
-
-}
-
-  .tween_button {
-    text-align: center;
-    display:inline-block;
-    margin:10px;
-    width:80px;
-    height:20px;
-    color:white;
-    background:black;
-    border-radius:10px;
-    padding:10px;
-    cursor:pointer;
-  }
-
-  #slide-container {
-    display:inline-block;
-    width:1050px;
-    position:relative;
-  }
-
-  .slide {
-    width:350px;
-    height:480px;
-    float:left;
-  }
-
-  div#slidercontainer {
-    position: relative;
-    overflow: hidden;
-    background: #000
-  }
-
-  div#slidercontainer {
-    width: 350px;
-    height: 480px;
-    margin:0px auto;
-  }
-
-  div#sider img {
-    width: 350px;
-    height: 480px;
-    float: left;
-  }
-
-  div#css3slider {
-    position: absolute;
-    width:1050px;
-    -webkit-animation-name:slider;
-    -webkit-animation-duration:15s;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count:infinite;
-    -moz-animation-name:slider;
-    -moz-animation-duration:15s;
-    -moz-animation-timing-function: ease-in-out;
-    -moz-animation-iteration-count:infinite;
-   -o-animation-name:slider;
-    -o-animation-duration:15s;
-    -o-animation-timing-function: ease-in-out;
-    -o-animation-iteration-count:infinite;
-    animation-name:slider;
-    animation-duration:15s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:infinite;
-  }
-
-  div#css3slider:hover {
-    -webkit-animation-play-state:paused;
-    -moz-animation-play-state:paused;
-    -o-animation-play-state:paused;
-    animation-play-state:paused;
-  }
-
-  div#css3slider img {
-    float: right;
-  }
-
-  div#slidercontainer:after {
-    content: "❚❚";
-    font-size: 150px;
-    position: absolute;
-    z-index: 12;
-    color: rgba(255,255,255, 0);
-    left: 100px; top: 100px;
-    -webkit-transition: 1s all ease-in-out;
-    -ms-transition: 1s all ease-in-out;
-    -moz-transition: 1s all ease-in-out;
-    -o-transition: 1s all ease-in-out;
-    transition: 1s all ease-in-out;
-  }
-
-  div#slidercontainer:hover:after {
-    color: rgba(255,255,255, 0.6);
+  svg {
+    width: 100%;
+    height: 100%;
   }
 }
+

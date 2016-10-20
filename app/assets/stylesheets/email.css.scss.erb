@@ -1,11 +1,35 @@
-@import "variables.css.scss" , "mixins.css.scss";
+@import "variables.css.scss";
 
-.email-page {
-  background: $black;
+.email-section {
+  position: fixed;
+  z-index:99;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  left:100%;
+  top:0;
+  height:100%;
+  width:80%;
+  color:white;
   letter-spacing:6px;
 
-  .content{
-    padding-top:220px;
+
+
+  .email-text-container {
+    width: 90%;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 auto;
+
+    svg {
+      width:100%;
+      height:auto;
+
+      text {
+        fill:white;
+        letter-spacing: 6px;
+      }
+    }
   }
 
   .email-link{
@@ -15,7 +39,6 @@
     max-width:900px;
     padding-bottom:0px;
     border-bottom: 0px white solid;
-    @include transition;
 
     .text_symbol{
     font-size:70px;
@@ -26,7 +49,6 @@
       opacity:0;
       padding-top:10px;
       text-align:center;
-      @include transition;
     }
 
     .email-link:hover ~ .email-message {

@@ -2,7 +2,11 @@
 //= require jquery_ujs
 //= require jquery.fancybox
 //= require jquery.fancybox-media
-//= require snap
-//= require TweenLite.min
-//= require responsiveslides.min
+//= require jquery.lazy.min
+//= require TimelineMax.min
+//= require TweenMax.min
+//= require ScrollToPlugin.min
+//= require MorphSVGPlugin.min
+//= require CSSPlugin.min
+//= require DrawSVGPlugin.min
 //= require_tree .

@@ -10,6 +10,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'jquery-rails'
 
+gem 'normalize-rails'
+
 # Auto Prefix CSS
 gem 'autoprefixer-rails'
 

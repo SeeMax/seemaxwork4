@@ -1,84 +1,123 @@
-@import "variables.css.scss" , "mixins.css.scss";
+@import "variables.css.scss";
 
-.main {
-position: relative;
-width:100%;
-height:100%;
+.home-page {
+  position: relative;
+  width:100%;
+  height:100%;
+}
 
-  .logo {
-    position: absolute;
-    text-align:center;
-    font-size:60px;
-    letter-spacing:6px;
-    vertical-align: middle;
-    width: 100%;
-    bottom:40px;
-    z-index: 101;
+.animated-logo {
+  position:fixed;
+  width:26%;
+  height:100%;
+  min-height:100%;
+  top:0;
+  left:0;
+  right:0;
+  margin:0 auto;
+  z-index:-98;
+}
 
-    img {
-      display: inline-block;
-      width:50px;
-    }
+.animated-type {
+  position:fixed;
+  width:24%;
+  height:auto;
+  bottom:30px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  overflow: visible;
+}
 
-    p {
-      font-size:16px;
-      line-height:24px;
-      vertical-align:middle;
-      font-weight:400;
-      text-align:center;
-      letter-spacing:1px;
-    }
+.logo-stroke{
+  fill:none;
+  stroke:#e4e4e4;
+  stroke-width:5;
+  stroke-miterlimit:10;
+}
 
-    .text_symbol {
-      letter-spacing:0px;
-      font-size:24px;
-      vertical-align:middle;
-    }
-  }
+.guide-stroke{
+  fill:none;
+  stroke:#58595B;
+  stroke-width:3;
+  stroke-miterlimit:10;
+}
 
-  .smalllogo {
-    position: absolute;
-    width:60px;
-    right: 40px;
-    bottom: 40px;
-    z-index: 102;
-  }
+.letter-fill {
+  opacity:0;
+  fill:#e2e2e2;
+  stroke:none;
+  stroke-width:0;
+  stroke-miterlimit:10;
+}
 
-  .video-overlay {
-    width:100%;
-    height:100%;
-    position:fixed;
-    background-color: black;
-    opacity: 0.3;
-    z-index: 1;
-  }
+.banner {
+  width:200px;
+  position: fixed;
+  bottom:27px;
+  right:-200px;
 
-  .mobile--background {
-    display: none;
-    position: fixed;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
+  img {
+    position: relative;
+    width:30%;
 
-      img {
-        position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          margin: auto;
-          min-width: 50%;
-          min-height: 50%;
-      }
-  }
-
-
-  .homevideo {
-    position: fixed; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
   }
 }
+
+.codepen-logo {
+   
+   path {
+    fill:white;
+    // stroke:#e4e4e4;
+    stroke:none;
+    stroke-width:5;
+    stroke-miterlimit:10;
+   }
+}
+
+.codepen-text {
+   
+  fill:white;
+  font-size: 200px;
+}
+
+.banner-fill {
+  fill:black;
+  // stroke:#e4e4e4;
+  stroke:none;
+  stroke-width:5;
+  stroke-miterlimit:10;
+}
+
+
+
+@media all and (max-width: 767px) {
+
+  .animated-logo {
+    position:fixed;
+    width:60%;
+    height:100%;
+    min-height:100%;
+    top:0;
+    left:0;
+    right:0;
+    margin:0 auto;
+    z-index:-98;
+  }
+
+  .animated-type {
+    position:fixed;
+    width:58%;
+    height:auto;
+    bottom:30px;
+    left:0;
+    right:0;
+    margin:0 auto;
+  }
+
+  .banner {
+    display:none;
+  }
+
+}// MAX WIDTH 767
+    
