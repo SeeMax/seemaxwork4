@@ -83,11 +83,11 @@ function homeLogoAnimation() {
 
 
     var tl = new TimelineMax()
-        baseEase =  Elastic.easeOut.config(.4, 1)
+        baseEase =  Elastic.easeOut.config(1, 1)
     
-    tl.set(animatedLetter, {bottom:'25%', opacity:0, scale:100, fill:"red", transformOrigin:"50% 100%"})
+    tl.set(animatedLetter, {opacity:0, scale:10, fill:"red", transformOrigin:"50% 100%"})
       .add(bounceLogo(), 'typeIn')
-      .staggerTo(animatedLetter, .3, {bottom:'0%', opacity:1, scale:1, fill:"#e2e2e2", ease:baseEase}, .1, 'typeIn')
+      .staggerTo(animatedLetter, .3, {opacity:1, scale:1, fill:"#e2e2e2", ease:baseEase}, .1, 'typeIn')
 
 
     return tl;
